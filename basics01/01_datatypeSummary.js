@@ -19,17 +19,44 @@
 // Reference (Non Primitive)
 // Array , Object , functions
 
-const heros = [ "superman" , "spiderman" , "ironman" ]
+// const heros = [ "superman" , "spiderman" , "ironman" ]
 
-let myObj = {
-    name : "superman",
-    age : 376
+// let myObj = {
+//     name : "superman",
+//     age : 376
+// }
+
+// const myFunction = function(){
+//     console.log("hello world");
+// }
+
+// console.log(typeof heros)
+// console.log(typeof myObj)
+// console.log(typeof myFunction)
+
+
+// _________________________________________________________
+
+// stack(primitive) , heap(non primitive)
+
+
+// let user1 = "wufdeyil"
+// let user2 = user1
+// console.log(user2);
+// user2 = "jkgkdc"
+// console.log(user2)
+
+
+
+let myObj0 = {
+    name : "utiwdui",
+    age : 34
 }
 
-const myFunction = function(){
-    console.log("hello world");
-}
+let myObj1 = myObj0
 
-console.log(typeof heros)
-console.log(typeof myObj)
-console.log(typeof myFunction)
+myObj1.name = "hkjadv"
+
+
+console.log(myObj0)
+
