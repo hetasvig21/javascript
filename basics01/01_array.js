@@ -28,12 +28,11 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 console.log("A ", myArr);
 
-// const myn1 = myArr.slice(1, 3) // make subarray startIndex = 1 and endIndex = 3 
-
+// const myn1 = myArr.slice(1, 3) // make subarray startIndex(included) = 1 and endIndex(excluded) = 3 
 // console.log(myn1);
-console.log("B ", myArr);
+console.log("B ", myArr); // slice -> not change array
 
 
 const myn2 = myArr.splice(1, 3) // remove element first para is index(1) and second is no of element(3) that wnt you delete
-console.log("C ", myArr);
+console.log("C ", myArr); // manipluted original array(changed)
 console.log(myn2);
