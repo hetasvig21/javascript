@@ -31,13 +31,13 @@ const user1 = {
 // user.email = "fdghfsj@micro.com"
 // console.log(user)
 
-user.greeting = function(){
-    console.log("hello user");
-}
-user.greeting1 = function(){
-    console.log(`hello user , ${this.name}`);
-}
-console.log(user)
-console.log(user.greeting())
-console.log(user.greeting1())
+// user.greeting = function(){
+//     console.log("hello user");
+// }
+// user.greeting1 = function(){
+//     console.log(`hello user , ${this.name}`);
+// }
+// console.log(user)
+// console.log(user.greeting())
+// console.log(user.greeting1())
 
