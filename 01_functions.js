@@ -90,11 +90,11 @@ function sayMyName(){
 
  // Array in Functions
 
- const newArray = [77,72,456,986];
+// const newArray = [77,72,456,986];
 
- function getSecValue(arr){
-    return arr[1];
- }
+//  function getSecValue(arr){
+//     return arr[1];
+//  }
 
- console.log(getSecValue(newArray));
+//  console.log(getSecValue(newArray));
  
