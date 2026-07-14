@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: aliceblue;">
+
+    <h1>AMAZING IMAGES</h1>
+
+    <ul id = "images">
+        <li id="c1" onclick="alert('coffee pic is clicked')"><img src="IMAGES/1.jfif" alt="1"></li>
+        <li id="c2"><img src="IMAGES/2.jfif" alt=""></li>
+        <li id="c3"><img src="IMAGES/3.jfif" alt=""></li>
+        <li id="c4"><img src="IMAGES/4.jfif" alt=""></li>
+        <a href="https://in.pinterest.com/">Pinterest</a>
+    </ul>
+    
+</body>
+<script>
+
+    document.getElementById("c2").onclick = function(){
+        alert("hello good morning");
+    }
+
+    // attachevent
+    // jquery - on 
+
+    // document.getElementById("c3").addEventListener("dblclick" , function(){
+    //     alert("hello 2nd time good morning")
+    // })
+
+
+
+    // propogation // bubbling down to up in DOM tree like li then ul
+    // document.getElementById("images").addEventListener("click" , function(e){
+    //     console.log("in images c3 is clicked")
+    // }) 
+
+    // document.getElementById("c3").addEventListener("click" , function(e){
+    //     console.log("c3 is clicked");
+    // })
+
+    // or
+
+    // document.getElementById("images").addEventListener("click" , function(e){
+    //     console.log("in images c3 is clicked")
+    // } , false) 
+
+    // document.getElementById("c3").addEventListener("click" , function(e){
+    //     console.log("c3 is clicked");
+    // }, false)
+
+    // propogation // cupturing up to down in DOM tree like li then ul
+    document.getElementById("images").addEventListener("click" , function(e){
+        console.log("in images c3 is clicked")
+    }, true ) 
+
+    document.getElementById("c3").addEventListener("click" , function(e){
+        console.log("c3 is clicked");
+    }, true )
+
+    // or
+
+    // document.getElementById("images").addEventListener("click" , function(e){
+    //     console.log("in images c3 is clicked")
+    // } , false) 
+
+    // document.getElementById("c3").addEventListener("click" , function(e){
+    //     console.log("c3 is clicked");
+    // }, false)
+
+    
+
+
+</script>
+</html>

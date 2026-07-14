@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addElement (langname){
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `${langname}`;
+        document.querySelector('.lang').appendChild(listItem);
+        // document.querySelector('li').append(listItem);
+        // console.log(listItem);
+        
+    }
+    addElement("python")
+    addElement("java")
+
+    function addOptiLang (langname) {
+        const listItem = document.createElement("li");
+        listItem.appendChild(document.createTextNode(langname));
+        document.querySelector('.lang').appendChild(listItem);
+    }
+    addOptiLang("C++")
+
+    // edit 
+
+    const item = document.querySelector("li:nth-child(1)")
+    
+    // item.innerHTML = "React"
+
+    const newLi = document.createElement("li")
+    newLi.textContent = "R"
+    item.replaceWith(newLi)
+
+    const firstEle = document.querySelector("li:first-child")
+    firstEle.outerHTML = "<li>TypeScript</li>"
+
+    // remove
+    const lastEle = document.querySelector("li:last-child")
+    lastEle.remove()
+</script>
+</html>
