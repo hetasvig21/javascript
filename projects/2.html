@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI calculator</h1>
+    <label for="height1" >Height in CM:</label>
+    <input type="number" id="h1" >
+    <br>
+    <label for="weight1" >Weight in KG:</label>
+    <input type="number" id="w1" value={value1} onchange="""(e) => (e.target.value)">
+    <br>
+    <button>Calculate</button>
+    <pre>
+        BMI Weight Guide
+
+Under Weight = Less than 18.6
+Normal Range = 18.6 and 24.9
+Overweight = Greater than 24.9</pre>
+</body>
+<script>
+    import {useState} from react;
+    const [ value1,setValue1 ] = useState();
+
+    const height1 = document.getElementById("h1").value;
+    console.log(height1);
+    
+    const weight1 = document.getElementById("w1").value;
+
+    // let formula = 
+</script>
+</html>
