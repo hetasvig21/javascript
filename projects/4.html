@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+
+    function BackGroundColor() {
+        const hex = "0123456789ABCDEF"
+        let BGcolor = "#"
+
+        for (let i = 0; i < 6; i++) {
+            BGcolor += hex[Math.floor(Math.random() * 16)]
+        }
+        return BGcolor
+    }
+
+    // console.log(BackGroundColor())
+    let interval ; 
+    const startChage = function () {
+
+        interval = setInterval(function () {
+            document.body.style.backgroundColor = BackGroundColor();
+        }, 1000);
+        
+    }
+
+    const stopChange = function () {
+        clearInterval(interval)
+        // interval = null;
+    }
+
+    
+    document.querySelector('#start').addEventListener( 'click' , startChage)
+
+    document.querySelector('#stop').addEventListener( 'click' , stopChange)
+
+
+    
+</script>
+
+</html>
